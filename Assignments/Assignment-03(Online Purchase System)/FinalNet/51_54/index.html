@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Online CD Store
+</title>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border: 1px solid black" class="container">
+
+        <h3 style="border:2px solid Tomato;">
+            <marquee> Welcome to Online Purchase System</marquee>
+        </h3>
+
+
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+
+        <!-- by this we give the table border -->
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+        </style>
+
+        <!-- call the table -->
+        <table>
+            <caption style="color:blue">
+                Available Cd Information
+            </caption>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Available Quantity</th>
+                <th>Price Per Piece</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>The Wall</td>
+                <td>10</td>
+                <td>50$</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Brothers in the Arms</td>
+                <td>15</td>
+                <td>50$</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Born in the USA</td>
+                <td>7</td>
+                <td>50$</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Music Box</td>
+                <td>3</td>
+                <td>50$</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>True Brule</td>
+                <td>12</td>
+                <td>50$</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Hybrid Theory</td>
+                <td>5</td>
+                <td>50$</td>
+            </tr>
+
+        </table>
+
+
+
+
+
+    </div>
+
+    <div style="border: 1px solid black" class="container">
+        <form action="" method="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Post Code :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your post code..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Credit Card Number :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your credit card number..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">CD ID :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your cd id..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Quantity : </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter Quantity..">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Feedback : </label>
+            </div>
+            <div class="col-75">
+                <p>Thanks for buying cd</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

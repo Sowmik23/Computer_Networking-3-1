@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Cd Store</title>
+    <link rel="icon" type="image/icon" href="https://cdn3.iconfinder.com/data/icons/66-cds-dvds/512/Icon_60-512.png">
+    <style>
+        table,th,td {
+            text-align: center;border: 1px solid black;border-color: red;color: blueviolet;margin: 5px;}table.center { margin-left: auto;margin-right: auto;}.idcd {width: 300px;height: 30px;margin-left: 500px;margin-right: auto;margin-top: 10px;}.addbtn { width: 40px;height: 40px;margin-top: 10px;margin-left: 500px;margin-right: auto;font-size: 30px;}.paymentbtn {width: 150px;height: 40px;margin-top: 10px;margin-left: 500px;margin-right: auto;font-size: 20px;}.cnltbtn {width: 150px;height: 40px;margin-top: 10px;margin-right: auto;font-size: 20px;}.pf {width: 300px;height: 30px;margin-left: 500px;margin-right: auto;margin-top: 10px;}.gf { width: 300px;height: 30px;margin-left: 20px;margin-right: auto;margin-top: 10px;}</style>
+</head>
+
+<body style="background-color:rgba(152, 166, 168, 0.267)">
+    <div><img class="mySlides"src="https://www.gannett-cdn.com/-mm-/27bc766425375689ee3b37cfd263f361a6337d83/c=0-52-2268-1334/local/-/media/2015/03/19/USATODAY/USATODAY/635623696406963517-CDS-1B-COMPACT-DISCS-202241.JPG?width=1600&height=800&fit=crop"width="100%" height="300px"><img class="mySlides"src="https://assets.pcmag.com/media/images/573817-stack-of-cds.jpg?thumb=y&width=810&height=456"width="100%" height="300px"><img class="mySlides"src="https://www.gannett-cdn.com/-mm-/0413792c80538d3bdedd8de957c68159fc0ddab1/c=0-208-1999-1338/local/-/media/2017/03/20/StCloud/StCloud/636256033626078802-STCTab-12-29-2016-Next-1-D002--2016-12-27-IMG-CD-1-1-7RGT1SAR-L946324552-IMG-CD-1-1-7RGT1SAR.jpg?width=1600&height=800&fit=crop"width="100%" height="300px"></div>
+    <div style="background-color:rgba(152, 166, 168, 0.267)">
+        <h2 align="center" style="padding-top: 20px ;padding-bottom:20px">Available Cd Information</h2>
+
+        <table class="center">
+            <tr><th>Sl. No.</th><th>CD Id</th><th>CD Type</th><th>Music Language</th><th>Publisher</th><th>Artists</th><th>Available Quantity</th><th>Cost per CD ($)</th></tr><tr><td>01</td><td>101</td><td>Audio Music</td><td>English</td><td>abc</td><td>singer name</td><td>100</td><td>20</td></tr><tr><td>02</td><td>102</td><td>Audio Music</td><td>English</td><td>abc</td><td>Selena Gomez</td><td>100</td><td>20</td> </tr> <tr><td>03</td><td>103</td><td>Audio Music</td><td>English</td><td>abc</td><td>Justin Bieber</td><td>100</td><td>20</td>
+            </tr><tr><td>04</td><td>104</td><td>Audio Music</td><td>English</td><td>abc</td><td>Justin Timberlake</td><td>100</td> <td>20</td></tr></table>
+        <br><br><br><br>
+        <h3 align="center">Order your choice</h3><diV id="order">
+            <input id="1" type="number" placeholder="Enter Id of the CD that you have choosed" class="idcd"></input>
+            <input id="101" type="number" placeholder="Enter quantity" style="height:30px;width:100px"></input>
+        </diV>
+        
+        <br><br><br><br><br>
+        <button class="paymentbtn"
+            onclick="document.getElementById('pmnt').style.display='block'">Payment</button><br><br>
+        <div id="pmnt" style="display:none;min-width: 1140px;">
+            <form method="post">
+            <input type="text" placeholder="First Name" class="pf" name="userName"></input>
+            <input type="text" placeholder="Family Name" class="gf" name="FamilyName"></input><br>
+            <input type="number" placeholder="Post Code (4 digit)" class="pf" name="postCode"></input>
+            <input type="number" placeholder="Credit Card number (8 digit)" class="gf" name="CardNum"></input><br>
+            <h4 align="center">Total price</h4>
+            <input class="pf" type="text" name="bill" value="20" readonly>
+            <input type="submit" value="Payment" class="paymentbtn"> <button class="cnltbtn" type="submit"
+                onclick="document.getElementById('pmnt').style.display='none'">Cancel</button><br><br><br><br>
+            </form>
+        </div>
+    </div>
+
+
+   
+    <script>
+        var myIndex = 0;carousel();function carousel() {var i;var x = document.getElementsByClassName("mySlides");for (i = 0; i < x.length; i++) {x[i].style.display = "none";}myIndex++;if (myIndex > x.length) { myIndex = 1 } x[myIndex - 1].style.display = "block";setTimeout(carousel, 2000);}
+    </script>
+    
+
+</body>
+
+</html>
