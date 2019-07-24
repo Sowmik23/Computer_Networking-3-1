@@ -1,0 +1,7 @@
+Server: 
+	Compile: g++ mail_server_54.cpp
+	Run: ./a.out
+
+Client: 
+	Compile: g++ mail_client_54.cpp
+	Run: ./a.out papon@gmail.com:19581 "Subject_of_mail" file_name.txt

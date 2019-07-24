@@ -1,0 +1,10 @@
+First of all remove all the .class file then....
+open terminal and execute these commands
+
+1) make build
+2) java bank 3000   //here 3000 is port number of bank server, you also change it
+3) java store 5000 127.0.0.1 3000
+
+4) now open your firefox browser and past it on a new tab: 
+    localhost:sourceport/index.html
+	

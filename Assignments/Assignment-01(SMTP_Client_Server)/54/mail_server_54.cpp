@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char const *argv[]){
 	
-	int sock = socket(AF_INET, SOCK_STREAM, 0);
+	int sock = socket(AF_INET, SOCK_STREAM, 0);   //socket(domain, type, protocol)
 
 	if(sock<0){
 		printf("Socket Error\n");
